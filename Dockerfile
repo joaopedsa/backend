@@ -9,7 +9,7 @@ COPY package.json /app
 RUN npm install
 
 # Bundle app source
-COPY src /app/src
+COPY . .
 
 EXPOSE 3333
 CMD npm run start
